@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(235, 18%, 26%);
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sing-up-container {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    width: 720px;
+    height: 492px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 56%;
+    margin-right: 28px;
+}
+
+.right {
+    width: 44%;
+}
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.advertisement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 20px 12px 20px;
+    height: 70%;
+}
+.advertisement h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+.advertisement p, .list li {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 16px auto;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    width: 16px;
+}
+
+.confirm-email {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    padding: 0 20px;
+}
+.confirm-email label {
+    color: hsl(234, 29%, 20%);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+.confirm-email input {
+    padding: 14px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 8px;
+}
+.confirm-email input:last-child {
+    background-color: hsl(234, 29%, 20%);
+    border-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 12px;
+    cursor: pointer;
+}
+.confirm-email input:last-child:hover {
+    background-color: hsl(4, 100%, 67%);
+    border-color: hsl(4, 100%, 67%);
+}
