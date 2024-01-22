@@ -17,11 +17,35 @@ body {
     height: 100vh;
 }
 
+
+/* General styles section */
+
+p, li {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.button-tr {
+    border: 1px solid transparent;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.6s ease-out;
+}
+.button-tr:hover {
+    background-color: hsl(4, 100%, 67%);
+}
+
+/*------------------------------------------------------------*/
+
 .sing-up-container {
     background-color: hsl(0, 0%, 100%);
     display: flex;
-    width: 720px;
-    height: 492px;
+    width: 740px;
+    height: 512px;
     padding: 20px;
     border-radius: 20px;
 }
@@ -29,12 +53,13 @@ body {
 .left {
     display: flex;
     flex-direction: column;
-    width: 56%;
+    justify-content: space-evenly;
+    width: 54%;
     margin-right: 28px;
 }
 
 .right {
-    width: 44%;
+    width: 46%;
 }
 .right img {
     width: 100%;
@@ -46,18 +71,13 @@ body {
 .advertisement {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 20px 20px 12px 20px;
-    height: 70%;
+    padding: 0 20px;
+    gap: 26px;
 }
 .advertisement h2 {
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     font-weight: 700;
     color: hsl(234, 29%, 20%);
-}
-.advertisement p, .list li {
-    font-size: 0.9rem;
-    font-weight: 400;
 }
 
 .list {
@@ -75,6 +95,7 @@ body {
 .confirm-email {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     height: 160px;
     padding: 0 20px;
 }
@@ -89,14 +110,61 @@ body {
     border: 1px solid hsl(231, 7%, 60%);
     border-radius: 8px;
 }
-.confirm-email input:last-child {
-    background-color: hsl(234, 29%, 20%);
+.confirm-email input:focus {
     border-color: hsl(234, 29%, 20%);
+    outline: none;
+}
+
+.successful-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 380px;
+    height: 380px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 40px;
+}
+.successful-card img {
+    width: 48px;
+}
+.successful-card h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+.successful-card button {
+    padding: 14px;
+    border-radius: 8px;
+    background-color: hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
-    margin-top: 12px;
+    border: none;
     cursor: pointer;
 }
-.confirm-email input:last-child:hover {
-    background-color: hsl(4, 100%, 67%);
-    border-color: hsl(4, 100%, 67%);
+
+.dissapear {
+    display: none;
+}
+
+@media(max-width: 740px) {
+    .sing-up-container {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .left {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .right {
+        width: 100%;
+    }
+    .right img {
+        content: url(./assets/images/illustration-sign-up-mobile.svg);
+    }
+    .advertisement {
+        gap: 16px;
+    }
 }
