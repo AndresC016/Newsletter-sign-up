@@ -178,9 +178,10 @@ p, li {
         height: 100%;
         padding: 20px;
         border-radius: 0;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 24px;
     }
     .successful-card button {
-        margin-top: 80px;
+        margin-top: 120px;
     }
 }

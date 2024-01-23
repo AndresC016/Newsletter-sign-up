@@ -30,10 +30,10 @@
       <form class="confirm-email" action="#">
   
         <label for="email">Email address</label>
-        <p class="error">Valid email required</p>
-        <input id="email" type="email" placeholder="email@company.com" oninput="validateEmail()">
+        <p class="error"></p>
+        <input id="email" type="email" placeholder="email@company.com" oninput="validateEmail()" required>
   
-        <button class="button-tr" type="submit">Subscribe to monthly newsletter</button>
+        <button id="button-email" class="button-tr" type="submit">Subscribe to monthly newsletter</button>
       </form>
 
     </section>
@@ -48,7 +48,7 @@
     <img src="./assets/images/icon-success.svg" alt="success.icon">
     <h2>Thanks for subscribing!</h2>
     <p>
-      A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.
+      A confirmation email has been sent to <span id="email-entered"></span>. Please open it and click the button inside to confirm your subscription.
     </p>
 
     <button class="button-tr">Dismiss message</button>
