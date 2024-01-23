@@ -30,7 +30,8 @@
       <form class="confirm-email" action="#">
   
         <label for="email">Email address</label>
-        <input id="email" type="email" placeholder="email@company.com">
+        <p class="error">Valid email required</p>
+        <input id="email" type="email" placeholder="email@company.com" oninput="validateEmail()">
   
         <button class="button-tr" type="submit">Subscribe to monthly newsletter</button>
       </form>
