@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AndresC016/Newsletter-sign-up)
-- Live Site URL: [Add live site URL here](https://andresc016.github.io/Newsletter-sign-up/)
+- Solution URL: [https://github.com/AndresC016/Newsletter-sign-up]
+- Live Site URL: [https://andresc016.github.io/Newsletter-sign-up/]
 
 ### Built with
 
